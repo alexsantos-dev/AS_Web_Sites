@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="devices.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+            </div>
+
+            <div id="formulario">
+                <form action="login.js" method="post">
+                 <input type="email" placeholder="Email" name="uEmail" class="login" id="uEmail">
+                 <input type="password" placeholder="Senha" name="uSenha"  class="login" id="uSenha"><br>
+                 <button class="botao" id="entrar" onclick="login()">Entrar</button><br>
+                 <a href="#" id="lostPass">Esqueceu a senha?</a><br>
+                 <button class="botao" id="nConta">Criar nova conta</button>
+                 <a href="https://github.com/alexsantos-dev/" id="ownGithub"><em>&COPY; Alex Santos</em></a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>

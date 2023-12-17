@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script defer src="script.js"></script>
+    <title>Headphone responsive</title>
+</head>
+
+<body>
+    <!-- header design -->
+    <header>
+        <a href="#" class="logo"><i class='bx bx-music'></i>Soundbox</a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Overview</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class="bx bx-cart" id="cart-icon"></i>
+            <i class="bx bx-menu" id="menu-icon"></i>
+        </div>
+    </header>
+
+    <!-- section home -->
+    <section class="home">
+        <div class="home-img">
+            <img src="img/red.png" id="one" alt="red headset">
+        </div>
+
+        <div class="home-text">
+            <h1>Wireless <br> Headsets </h1>
+            <h5>The smarter way to listen</h5>
+            <h3>R$ 449,99</h3>
+            <a href="#" class="btn">Buy now</a>
+        </div>
+
+        <div class="main">
+            <div class="row row1">
+                <li><img src="img/red.png" alt="red headset icon"
+                        onclick="slider1('img/red.png')"></li>
+            </div>
+
+            <div class="row row2">
+                <li><img src="img/green.png" alt="green headset icon"
+                        onclick="slider2('img/green.png')"></li>
+            </div>
+            <div class="row row3">
+                <li><img src="img/blue.png" alt="blue headset icon"
+                        onclick="slider3('img/blue.png')"></li>
+            </div>
+        </div>
+
+        <a href="#" class="bottom">Scroll Dowm<i class="bx bx-down-arrow-circle"></i></a>
+    </section>
+</body>
+
+</html>

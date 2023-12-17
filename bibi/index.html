@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- testando git -->
+<!-- testando git2.0 -->
+<!-- testando git 3.0 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descubra tudo sobre Bibi, o Brawler #Top 1 do Brawl Stars. Aprenda sobre sua história, habilidades e estratégias de jogo. Fique por dentro das últimas novidades e atualizações do Meta Gaming e Balances no mundo do Brawl Stars." />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Brawl Stars - Bibi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Lilita One', cursive;
+        }
+
+        :root {
+            --text-color: #fff;
+            --hero-color: #897b7b;
+            --main-color: #492a79;
+            --sub-main: #9a18a3;
+            --bg-dark: #111d4e;
+            --bg-light: #6b97cb;
+            --darkland: #070f1f;
+
+        }
+
+
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: radial-gradient(50.53% 50.53% at 50.53% 49.47%, var(--main-color) 0%, var(--bg-dark) 100%);
+            font-family: 'Lilita One', cursive;
+
+        }
+
+        nav {
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 33px 8%;
+            background: transparent;
+        }
+
+        .logo {
+            color: var(--text-color);
+            font-size: 56px;
+            text-shadow: -6px 4px 0 black;
+            font-weight: 500;
+            border-bottom: dashed 4px var(--text-color);
+        }
+
+        .navlist {
+            display: flex;
+            align-items: center;
+        }
+
+        .navlist a {
+            color: var(--text-color);
+            margin: 0 16px;
+            padding: 8px 24px;
+            font-size: 18px;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+            border: 2px solid transparent;
+            border-radius: 32px;
+            transition: .3s ease;
+        }
+
+        .navlist a:hover {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+            border: solid 2px var(--text-color);
+            border-radius: 32px;
+        }
+
+        .navlist :nth-child(1) {
+            animation: sumidao .1s ease-in-out;
+        }
+
+        .navlist :nth-child(2) {
+            animation: sumidao .5s ease-in-out;
+        }
+
+        .navlist :nth-child(3) {
+            animation: sumidao .9s ease-in-out;
+        }
+
+        .navlist :nth-child(4) {
+            animation: sumidao 1.1s ease-in-out;
+        }
+
+
+        @keyframes sumidao {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #menu-icon {
+            z-index: 90;
+            display: none;
+            padding: 12px;
+            color: var(--text-color);
+            font-size: 32px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+            transition: all .3s ease-in-out;
+
+        }
+
+        #menu-icon:hover {
+            transition: all .3s ease-in-out;
+            transform: translateY(-2px);
+        }
+
+        main {
+            top: 0;
+            left: 0;
+            padding: 0 14%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hero {
+            color: var(--text-color);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+            width: 400px;
+            height: 400px;
+        }
+
+        .hero h1 {
+            text-shadow: -4px 2px 0 black;
+            font-size: 64px;
+            font-weight: 500;
+            margin-bottom: 4px;
+
+        }
+
+        .hero h5 {
+            color: var(--text-color);
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-break: loose;
+            line-height: 1.8rem;
+            margin-bottom: 16px;
+        }
+
+        .btn {
+            font-size: 16px;
+            font-weight: 100;
+            color: var(--text-color);
+            text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.39);
+            box-shadow: 2px 4px 4px 0 var(--darkland);
+            padding: 12px 30px;
+            border: 2px solid var(--text-color);
+            background: transparent;
+            border-radius: 32px;
+            transition: all .6s ease;
+        }
+
+        .active {
+            font-weight: 100;
+            border: solid 2px var(--sub-main);
+            color: var(--text-color);
+            background: var(--sub-main);
+            padding: 12px 26px;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 4px 8px 4px 0 var(--darkland);
+
+        }
+
+        .brawler img {
+            width: 350px;
+            max-width: 100%;
+            height: 100%;
+            animation: flutuar 4s ease-in-out infinite;
+        }
+
+        @keyframes flutuar {
+
+            0%,
+            100% {
+                transform: translateY(10px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width:1119px) {
+            .logo {
+                font-size: 2rem;
+            }
+
+            .navlist {
+                font-size: 1.5rem;
+            }
+
+            .navlist a {
+                padding: 4px 6px;
+            }
+        }
+
+        @media (max-width:840px) {
+            body {
+                background: radial-gradient(90.53% 50.53% at 50.53% 49.47%, var(--main-color) 0%, var(--bg-dark) 100%);
+            }
+
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            .navlist {
+                display: none;
+            }
+
+            .navlist.open {
+                z-index: 1;
+                display: flex;
+                position: fixed;
+                top: 16%;
+                right: 4%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 60px 30px;
+                gap: 32px;
+                border-radius: 30px;
+                background: var(--darkland);
+                animation: fadeAnimation .4s ease-in-out;
+            }
+
+            @keyframes fadeAnimation {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+
+
+            #menu-icon {
+                position: relative;
+                top: 6%;
+                right: 4%;
+                display: block;
+
+            }
+
+            main {
+                position: relative;
+                top: 0;
+                left: 0;
+                flex-direction: column;
+            }
+
+            .hero {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+            }
+
+            .btn {
+                margin: 8px auto;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .brawler {
+                margin-top: 42px;
+                width: 200px;
+                height: 270px;
+                margin-bottom: 100px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Brawl Stars</a>
+            <ul class="navlist">
+                <li><a href="#">Brawlers</a></li>
+                <li><a href="#">Brawltalks</a></li>
+                <li><a href="#">Meta Gaming</a></li>
+                <li><a href="#">Balances</a></li>
+            </ul>
+            <div>
+                <i class="bx bx-menu" id="menu-icon"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside class="hero">
+            <h5>#Top 1</h5>
+            <h1>Bibi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nisi laborum aspernatur natus velit
+                cupiditate! Debitis laboriosam sapiente alias.</p>
+            <button class="btn active">Description</button>
+            <button class="btn">Gameplay</button>
+
+        </aside>
+
+        <article class="brawler">
+            <img src="img/bib1.webp" alt="Brawler Bibi">
+        </article>
+        <script>
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navlist');
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x');
+                navbar.classList.toggle('open');
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 998px){
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(to top, #D943C0, #0CDBF2);background-repeat: no-repeat;
+        background-position: cover;
+    
+    }
+    
+    main{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    section#login{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        background-color: transparent;
+        width: 1000px;
+        height: 500px;
+        border-radius: 50px;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.46);
+        border: inset 20px rgb(42, 41, 41);
+        box-shadow: currentColor 10px 10px 15px;
+        transition: .7s;
+    }
+    
+    div#img{
+        position: relative;
+    }
+    
+    div#imagem{
+        float: left;
+        display: block;
+        background: url('imagens/pexels-miguel-á-padriñán-2882566.jpg') no-repeat center center;
+        background-size: cover;
+        width: 400px;
+        height: 460px;
+        border-radius: 30px 0 0 30px;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.46);
+    
+    }
+    
+    div#formulario{
+        display: flexbox;
+        float: center;
+        display: block;
+        padding: 10px;
+    }
+    
+    div#formulario > form > input.login{
+        font-size: 1.3em;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 400px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: solid 1px black;
+        transition: .7s;
+    }
+    div#formulario > form > input.login::placeholder{
+    color: white;
+    }
+    
+    
+    div#formulario > form > a{
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    div#formulario > form > a#lostPass{
+        margin-top: -15px;
+        margin-bottom: 30px;
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.605);
+    }
+    
+    div#formulario > form > a#ownGithub{
+        margin-top: 10px;
+    }
+    
+    a#ownGithub:hover{
+        text-decoration: underline;
+
+    }
+    
+    div#formulario > form > button.botao{
+        font-size: 1.3em;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+        width: 400px;
+        display: block;
+        margin: auto;
+        color: white;
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.605);
+        transition: .7s;
+    }
+    
+    div#formulario > form > button#entrar{
+        background-color: #0CDBF2;
+        border: none;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.516);                                                                          
+    }
+    
+    
+    div#formulario > form > button#nConta{
+        margin-top: 60px;
+        background-color: transparent;
+        border: solid 1px black;
+    }
+}
